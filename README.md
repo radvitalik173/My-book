@@ -23,6 +23,6 @@ Setup Instructions:
        In the second console, run:
          - nodemon server.js
   4. Ensure PostgreSQL is set up:
-     Make sure your PostgreSQL server is running and you have the necessary database setup.
-  5. Access the application
+     Make sure your PostgreSQL server is running and you have the necessary database setup like this: https://drive.google.com/file/d/1VcQgL9s7Ir80zDn_pekckZPwj4aqvvlY/view?usp=sharing
+  6. Access the application
      Open your browser and navigate to http://localhost:3000 to use the app.
