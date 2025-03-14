@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/book/post" method="POST">
+    <div class="container px-5"> <!-- Title -->
+        <div class="row">
+            <div class="col">
+                <figure>
+                    <input type="text" class="form-control w-100" id="url_image_book" name="url_image_book" placeholder="Image URL">
+                </figure>
+            </div>
+            <div class="col-9">
+                <h2 class="mt-3">
+                    <textarea class="form-control" id="name_book" name="name_book" rows="1" placeholder="Book Name"></textarea>
+                </h2>    
+                <div class="my-5">
+                    <small class="text-secondary">
+                        <input type="text" class="form-control w-25" id="book_score" name="book_score" placeholder="Score">
+                    </small>
+                </div>
+            </div>
+            <p>
+                <textarea class="form-control" id="short_notes" name="short_notes" rows="4" placeholder="Short Note"></textarea>
+            </p>
+        </div>
+        <p class="display-5">MY NOTES</p>
+        <p class="mb-5">
+            <textarea class="form-control" id="long_notes" name="long_notes" rows="20" placeholder="Long Note"></textarea>
+        </p>
+        <button type="submit" class="btn btn-secondary mb-5" value="Save">Post</button>
+    </div> 
+</form>
+
+<%- include("partials/footer.ejs") %>

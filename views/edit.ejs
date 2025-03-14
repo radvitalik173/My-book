@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+<form action="/book/<%= book.id %>/save" method="POST">
+    <div class="container px-5"> <!-- Title -->
+        <div class="row">
+            <div class="col">
+                <figure>
+                    <img src="<%= book.url_image_book %>" alt="<%= book.name_book %>" loading="lazy">
+                    <input type="text" class="form-control w-100" id="url_image_book" name="url_image_book" placeholder="Image URL" value="<%= book.url_image_book %>">
+                </figure>
+            </div>
+            <div class="col-9">
+                <h2 class="mt-3">
+                    <textarea class="form-control" id="name_book" name="name_book" rows="1" placeholder="Book Name"><%= book.name_book %></textarea>
+                </h2>    
+                <div class="my-5">
+                    <small class="text-secondary">
+                        Date edit: <%= book.date_edit %>. <p></p>
+                        How strongly I recommend it: 
+                        <input type="text" class="form-control w-25" id="book_score" name="book_score" placeholder="Score" value="<%= book.book_score %>">
+                    </small>
+                </div>
+            </div>
+            <p>
+                <textarea class="form-control" id="short_notes" name="short_notes" rows="4"><%= book.short_notes %></textarea>
+            </p>
+        </div>
+        <p class="display-5">MY NOTES</p>
+        <p class="mb-5">
+            <textarea class="form-control" id="long_notes" name="long_notes" rows="20"><%= book.long_notes %></textarea>
+        </p>
+        <button type="submit" class="btn btn-secondary mb-5" value="Save">Save All</button>
+    </div> 
+</form>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,27 @@
+  /* Ensures that the page takes full height */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  /* Flexbox container for the layout */
+  .d-flex {
+    min-height: 100%;
+    flex-direction: column;
+  }
+
+  /* Make the main content area grow and take remaining space */
+  main {
+    flex-grow: 1;
+    padding-top: 20px; /* Optional: Adds some padding on top */
+  }
+
+  /* Style for footer */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+  }

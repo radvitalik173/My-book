@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container px-5"> <!-- Title -->
+    <div class="row">
+        <div class="col">
+            <figure>
+                <img src="<%= book.url_image_book %>" alt="<%= book.name_book %>" loading="lazy">
+            </figure>
+        </div>
+        <div class="col-9">
+            <h2 class="mt-3">
+                <a href="/"><%= book.name_book %></a>
+            </h2>    
+            <div class="my-5">
+                <small class="text-secondary">
+                    Date edit: <%= book.date_edit %>. <p></p>
+                    How strongly I recommend it: <%= book.book_score %>
+                </small>
+            </div>
+        </div>
+        
+        <p><%= book.short_notes %></p>
+        <div class="row mb-5"> <!-- edit button -->
+            <div class="col-2">
+                <form action="/book/<%= book.id %>/edit" method="POST">
+                    <button type="submit" class="btn btn-secondary">Edit All</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <p class="display-5">MY NOTES</p>
+    <p class="mb-5"><%= book.long_notes %></p>
+    
+</div> 
+
+<%- include("partials/footer.ejs") %>
