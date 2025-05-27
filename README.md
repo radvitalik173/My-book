@@ -26,3 +26,5 @@ Setup Instructions:
      Make sure your PostgreSQL server is running and you have the necessary database setup like this: https://drive.google.com/file/d/1VcQgL9s7Ir80zDn_pekckZPwj4aqvvlY/view?usp=sharing
   6. Access the application
      Open your browser and navigate to http://localhost:3000 to use the app.
+     
+![images](https://github.com/user-attachments/assets/048d8c88-33f2-449f-b2f6-61b95a0af8b9)
